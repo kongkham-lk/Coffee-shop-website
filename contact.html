@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet"/>
+	<script src="interact.js" defer></script>
+    <title>Contact</title>
+</head>
+<body>
+	<header>
+		<div id="backgroundHead" class="contact"></div>
+		<div class="story">
+			<h1 class="white">Contact us</h1>
+			<h5 class="white">Simply tell us your coffee taste, what you like and what we can improve by filling out the form below. Thank you for your supports.</h5>
+		</div>
+		<div class="nav">
+			<a id="shopLogo" href="index.html"><img src="img/coffee-bean.png" />EVERYDAY</a>
+			<nav class="nav">				
+				<a id="navicon"><img src="img/navicon-w.png" /></a>
+				<ul>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="review.html">Review</a></li> 
+					<li><a href="contact.html">Contact</a></li>
+					<li class="hide">Order <span></span></li>
+					<li><button class="white nav" type="button">Order </button><span></span></li>
+				</ul>
+			</nav>	
+		</div>
+    </header>
+	<section>
+		<div class="contact">
+			<div class="contact table1">
+				<h4>COFFEE HOUR</h4>
+				<table>
+					<tr class="day">
+						<td class="day">Mon</td>
+						<td>9.00 - 18.00</td>
+					</tr>
+					<tr class="day">
+						<td class="day">Tue</td>
+						<td>9.00 - 18.00</td>
+					</tr>
+					<tr class="day">
+						<td class="day">Wed</td>
+						<td>9.00 - 18.00</td>
+					</tr>
+					<tr class="day">
+						<td class="day">Thu</td>
+						<td>9.00 - 18.00</td>
+					</tr>
+					<tr class="day">
+						<td class="day">Fri</td>
+						<td>9.00 - 18.00</td>
+					</tr>
+					<tr class="day">
+						<td class="day">Sat</td>
+						<td>9.00 - 16.00</td>
+					</tr>
+					<tr class="day">
+						<td class="day">Sun</td>
+						<td>9.00 - 16.00</td>
+					</tr>
+				</table>
+			</div>
+			<div class="contact table2">
+				<h4>TALK TO US</h4>
+				<form action="thank.html" method="post" autocomplete="off">
+					<div class="row">
+						<div class="column">
+							<label for="fName">First Name *</label>
+							<input type="text" name="fName" id="fName" required />
+						</div>
+						<div class="column">
+							<label for="lName">Last Name *</label>
+							<input type="text" name="lName" id="lName" required />
+						</div>
+					</div>
+					<div class="row">
+						<div class="column">
+							<label for="email">Email Addess *</label>
+							<input type="email" name="email" id="email" required />
+						</div>
+						<div class="column">
+							<label for="reason">Reason for contact *</label>
+							<input type="text" name="reason" id="reason" placeholder="Revew, feedback, others" required />
+						</div>
+					</div>
+					<label for="message">Message</label>
+					<textarea type="text" id="message" placeholder="Things you want to say" rows="5"></textarea>
+					<button class="black" type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+		<div class="map">
+			<h4>OUR LOCATION</h4>
+			<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5515.415972088933!2d-123.11800840630265!3d49.27773008436696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867180eb996587%3A0x5ce51a4bb93e7663!2sRobson%20St%2C%20Vancouver%2C%20BC!5e0!3m2!1sen!2sca!4v1680501448348!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</section>	
+	<footer>
+		<div>
+			<h4>ABOUT EVERYDAY</h4>
+			<ul>
+				<li><a href="about.html">Our Shop</a></li>
+				<li><a href="menu.html">Our Menu</a></li>
+				<li><a href="review.html">Review</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+			<a href="https://www.facebook.com/"><img src="img/facebook-logo-521.png" /></a>
+			<a href="https://www.instagram.com/"><img src="img/icons8-instagram-512.png" /></a>
+			<a href="https://twitter.com/"><img src="img/icons8-twitter-512.png" /></a>
+			<h6>© 2023 Everyday Coffee Company. All rights reserved.<br>Design by Kongkham Luangkhot.</h6>
+		</div>
+	</footer>
+	<div class="order">
+		<div class="container">
+			<img class="close" src="img/cross.png"/>
+			<h1 class="black">Delicious order</h1>
+			<h4>Order list</h4>
+			<div class="orderList">
+				
+				
+			</div>
+			<div class="totalPrice">
+				<h5><b>Total</b> <span class="amount">x0</span></h5>
+				<h5 class="totalPrice">$ 0</h5>
+			</div>
+			<a class="black" href="thank.html"><button class="black" type="button">Confirm</button></a>
+		</div>
+	</div>
+</body>
+</html>
